@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Y0u Notes | 技术博客</title>
+    <meta
+      name="description"
+      content="一个 Hexo / AnZhiYu 风格的中文技术博客静态模板。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Y0u Notes 首页">
+        <span class="brand-mark">Y</span>
+        <span class="brand-text">Y0u Notes</span>
+      </a>
+
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#" class="is-active">首页</a>
+        <a href="#archive">归档</a>
+        <a href="#tags">标签</a>
+        <a href="#projects">项目</a>
+        <a href="#about">关于</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="icon-btn"
+          id="themeToggle"
+          type="button"
+          aria-label="切换主题"
+          data-tooltip="切换主题"
+          title="切换主题"
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path
+              d="M12 3v2.3m0 13.4V21m6.4-15.4-1.6 1.6M7.2 16.8l-1.6 1.6M21 12h-2.3M5.3 12H3m15.4 6.4-1.6-1.6M7.2 7.2 5.6 5.6"
+            />
+            <circle cx="12" cy="12" r="4.2" />
+          </svg>
+        </button>
+        <button
+          class="icon-btn menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="打开导航"
+          data-tooltip="导航"
+          title="导航"
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Crypto / CTF / Algorithm</p>
+          <h1 id="hero-title">把复杂问题拆成可以验证的小步骤。</h1>
+          <p class="hero-copy">
+            记录密码学、Web 安全、算法笔记和一些工程实践。
+          </p>
+          <div class="hero-meta" aria-label="站点数据">
+            <span>36 篇文章</span>
+            <span>12 个专题</span>
+            <span>持续更新</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="近期更新">
+        <span class="ticker-label">最近</span>
+        <a href="post-group-ring.html">抽象代数基本概念</a>
+        <a href="#">GF(2^8) 上的运算法则</a>
+        <a href="#">蒙哥马利阶梯算法</a>
+      </section>
+
+      <div class="page-shell">
+        <aside class="sidebar" aria-label="侧边栏">
+          <section class="profile-card" id="about">
+            <img class="avatar" src="assets/avatar.svg" alt="站点头像" />
+            <h2>AiY Notes</h2>
+            <p>安全学习者 / 题解整理者 / 喜欢把知识写清楚的人。</p>
+            <div class="profile-stats">
+              <span><strong>CTF</strong>分类</span>
+              <span><strong>Crypto</strong>方向</span>
+              <span><strong>Notes</strong>输出</span>
+            </div>
+          </section>
+
+          <section class="side-panel" id="tags">
+            <div class="panel-heading">
+              <h2>标签</h2>
+              <span>Tag</span>
+            </div>
+            <div class="tag-cloud" role="list">
+              <button class="tag is-active" data-filter="all" type="button">
+                全部
+              </button>
+              <button class="tag" data-filter="crypto" type="button">
+                Crypto
+              </button>
+              <button class="tag" data-filter="ctf" type="button">CTF</button>
+              <button class="tag" data-filter="algorithm" type="button">
+                Algorithm
+              </button>
+              <button class="tag" data-filter="web" type="button">Web</button>
+              <button class="tag" data-filter="notes" type="button">
+                Notes
+              </button>
+            </div>
+          </section>
+
+          <section class="side-panel" id="projects">
+            <div class="panel-heading">
+              <h2>项目</h2>
+              <span>Lab</span>
+            </div>
+            <ul class="project-list">
+              <li>
+                <span class="dot dot-cyan"></span>
+                <a href="#">CTF Writeups</a>
+              </li>
+              <li>
+                <span class="dot dot-amber"></span>
+                <a href="#">Crypto Playground</a>
+              </li>
+              <li>
+                <span class="dot dot-green"></span>
+                <a href="#">Web Security Notes</a>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="content" aria-labelledby="article-title">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Latest Posts</p>
+              <h2 id="article-title">最新文章</h2>
+            </div>
+            <label class="search">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m16.2 16.2 3.8 3.8" />
+              </svg>
+              <input id="searchInput" type="search" placeholder="搜索文章" />
+            </label>
+          </div>
+
+          <div class="article-list" id="articleList">
+            <article
+              class="post-card"
+              data-tags="crypto algorithm notes"
+              data-title="抽象代数基本概念 群 环 域"
+            >
+              <a
+                class="post-cover"
+                href="post-group-ring.html"
+                aria-label="阅读抽象代数基本概念 群 环 域"
+              >
+                <img src="assets/cover-algebra.svg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <time datetime="2025-07-14">2025-07-14</time>
+                  <span>3 min</span>
+                </div>
+                <h3><a href="post-group-ring.html">抽象代数基本概念——群、环、域</a></h3>
+                <p>
+                  从群、环、域三个层次梳理代数结构，为有限域、ECC 和密码学题解里的符号建立基础语境。
+                </p>
+                <div class="post-tags">
+                  <span>抽象代数</span>
+                  <span>Crypto</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="post-card"
+              data-tags="crypto ctf"
+              data-title="GF(2^8) 上的运算法则"
+            >
+              <a class="post-cover" href="#" aria-label="阅读 GF(2^8) 上的运算法则">
+                <img src="assets/cover-finite-field.svg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <time datetime="2026-04-26">2026-04-26</time>
+                  <span>8 min</span>
+                </div>
+                <h3><a href="#">GF(2^8) 上的运算法则</a></h3>
+                <p>
+                  从多项式表示、不可约多项式到 AES 中的乘法实现，给有限域运算搭一个可复用的心智模型。
+                </p>
+                <div class="post-tags">
+                  <span>Crypto</span>
+                  <span>Finite Field</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="post-card"
+              data-tags="algorithm crypto"
+              data-title="蒙哥马利阶梯算法"
+            >
+              <a class="post-cover" href="#" aria-label="阅读蒙哥马利阶梯算法">
+                <img src="assets/cover-algorithm.svg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <time datetime="2026-04-17">2026-04-17</time>
+                  <span>10 min</span>
+                </div>
+                <h3><a href="#">蒙哥马利阶梯算法</a></h3>
+                <p>
+                  以标量乘法为线索，理解恒定时间结构、交换更新和椭圆曲线实现里的安全细节。
+                </p>
+                <div class="post-tags">
+                  <span>Algorithm</span>
+                  <span>ECC</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="post-card"
+              data-tags="crypto ctf web"
+              data-title="ECB Oracle 的字节爆破"
+            >
+              <a class="post-cover" href="#" aria-label="阅读 ECB Oracle 的字节爆破">
+                <img src="assets/cover-crypto.svg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <time datetime="2026-04-09">2026-04-09</time>
+                  <span>7 min</span>
+                </div>
+                <h3><a href="#">ECB Oracle 的字节爆破</a></h3>
+                <p>
+                  用分块、填充和查表攻击推导出明文恢复流程，把“看起来玄学”的攻击写成稳定脚本。
+                </p>
+                <div class="post-tags">
+                  <span>CTF</span>
+                  <span>AES</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="post-card"
+              data-tags="web notes"
+              data-title="XSS 过滤绕过笔记"
+            >
+              <a class="post-cover" href="#" aria-label="阅读 XSS 过滤绕过笔记">
+                <img src="assets/cover-web.svg" alt="" />
+              </a>
+              <div class="post-body">
+                <div class="post-meta">
+                  <time datetime="2026-03-30">2026-03-30</time>
+                  <span>6 min</span>
+                </div>
+                <h3><a href="#">XSS 过滤绕过笔记</a></h3>
+                <p>
+                  按上下文整理 payload 变形、编码策略和浏览器解析差异，方便比赛时快速定位入口。
+                </p>
+                <div class="post-tags">
+                  <span>Web</span>
+                  <span>Notes</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="empty-state" id="emptyState">没有找到匹配的文章。</p>
+        </section>
+      </div>
+
+      <section class="archive" id="archive" aria-labelledby="archive-title">
+        <div class="archive-inner">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h2 id="archive-title">归档</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time datetime="2025-07">2025.07</time>
+              <a href="post-group-ring.html">抽象代数基本概念——群、环、域</a>
+            </li>
+            <li>
+              <time datetime="2026-04">2026.04</time>
+              <a href="#">GF(2^8) 上的运算法则</a>
+            </li>
+            <li>
+              <time datetime="2026-04">2026.04</time>
+              <a href="#">蒙哥马利阶梯算法</a>
+            </li>
+            <li>
+              <time datetime="2026-04">2026.04</time>
+              <a href="#">ECB Oracle 的字节爆破</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <button
+      class="back-top"
+      id="backTop"
+      type="button"
+      aria-label="返回顶部"
+      data-tooltip="返回顶部"
+      title="返回顶部"
+    >
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path d="m6 15 6-6 6 6" />
+      </svg>
+    </button>
+
+    <footer class="site-footer">
+      <span>Y0u Notes</span>
+      <span>Built for GitHub Pages</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

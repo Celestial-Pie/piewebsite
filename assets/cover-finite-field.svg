@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-label="有限域文章封面">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f7ae0"/>
+      <stop offset="1" stop-color="#1db7c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" fill="#0f172a"/>
+  <circle cx="420" cy="74" r="118" fill="url(#bg)" opacity=".56"/>
+  <g fill="none" stroke="#dbeafe" stroke-width="3" opacity=".82">
+    <path d="M80 94h128v64H80zM244 94h128v64H244zM162 206h128v64H162z"/>
+    <path d="M208 126h36M244 126l-34 80M308 158l-18 48"/>
+  </g>
+  <g fill="#fff" font-family="ui-monospace, Consolas, monospace" font-size="28" font-weight="700">
+    <text x="104" y="136">GF</text>
+    <text x="278" y="136">2^8</text>
+    <text x="190" y="248">AES</text>
+  </g>
+</svg>

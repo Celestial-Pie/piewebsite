@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-label="算法文章封面">
+  <rect width="520" height="360" fill="#11201a"/>
+  <path d="M52 272c96-140 176-120 238-78 62 42 104 32 178-104" fill="none" stroke="#61d59a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M52 278c84-66 146-72 212-32 70 42 130 42 204-20" fill="none" stroke="#f1b458" stroke-width="6" stroke-linecap="round" opacity=".82"/>
+  <g fill="#f8fafc">
+    <circle cx="78" cy="240" r="14"/>
+    <circle cx="190" cy="178" r="14"/>
+    <circle cx="302" cy="202" r="14"/>
+    <circle cx="444" cy="110" r="14"/>
+  </g>
+  <g fill="#9aa7bc" font-family="ui-monospace, Consolas, monospace" font-size="22" font-weight="700">
+    <text x="72" y="96">ladder(k, P)</text>
+    <text x="72" y="128">swap / add / double</text>
+  </g>
+</svg>

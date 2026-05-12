@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-label="Web 安全文章封面">
+  <rect width="520" height="360" fill="#102033"/>
+  <rect x="68" y="66" width="384" height="228" rx="8" fill="#172b43" stroke="#35506f" stroke-width="2"/>
+  <rect x="68" y="66" width="384" height="48" rx="8" fill="#203a59"/>
+  <circle cx="96" cy="90" r="7" fill="#f58aaa"/>
+  <circle cx="120" cy="90" r="7" fill="#f1b458"/>
+  <circle cx="144" cy="90" r="7" fill="#61d59a"/>
+  <g fill="#dbeafe" font-family="ui-monospace, Consolas, monospace" font-size="22" font-weight="700">
+    <text x="96" y="166">&lt;script&gt;</text>
+    <text x="96" y="204">filter(input)</text>
+    <text x="96" y="242">escape(ctx)</text>
+  </g>
+  <path d="M342 164 382 204 342 244" fill="none" stroke="#55d5df" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
